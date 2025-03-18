@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaporSmoke</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="../Projeto/img/favicon.ico">
+    <script src="../Projeto/js/script.js"></script>
+    <script src="../Projeto/js/cart.js"></script>
+    <script src="../Projeto/js/checkout.js"></script>
+    <script src="../Projeto/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Cabeçalho-->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="../Projeto/index.html">
+          <img src="../Projeto/img/Logo.png" alt="">
+          </a>
+        </div>
+        <div class="nav-list">
+           <ul>
+             <li class="nav-item"><a href="../Projeto/index.html" class="nav-link">Inicio</a></li>
+             <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+             <li class="nav-item"><a href="../Projeto/produtos.html" class="nav-link">Produtos</a></li>
+             <li class="nav-item"><a href="../Projeto/checkout.html" class="nav-link">Carrinho</a></li>
+           </ul>
+        </div>
+        <div class="login-button">
+         <a href="../Projeto/login.html" class="lgn-btn">
+          <i class="fa-solid fa-user"></i> Login
+        </a>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="../Projeto/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="../Projeto/index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="../Projeto/produtos.html" class="nav-link">Produtos</a></li>
+        </ul>
+        <div class="login-button">
+          <button>
+            <a href="../Projeto/login.html">
+              <i class="fa-solid fa-user"></i>Login
+            </a>
+          </button>
+        </div>
+      </div>
+
+
+
+    </header>
+    <main class="container">    
+      <!-- Grid de produtos-->
+        <section class="products-container">
+           <div class="card">
+             <div class="product-image" id="img-5"></div>
+             <h3>Seda Smoking Deluxe</h3>
+             <p>Seda Smoking Deluxe Un</p>
+             <p>R$ <span class="bold">150,00</span></p>
+             <button class="btn" data-id="5" data-name="Seda Smoking Deluxe" data-price="150.00">Adicionar ao Carrinho</button>
+           </div>
+           <!--cards-->
+           <div class="card">
+             <div class="product-image" id="img-6"></div>
+             <h3>Seda Papelito Brown</h3>
+             <p>Esse vaper é o classico...</p>
+             <p>R$ <span class="bold">150,00</span></p>
+             <button class="btn" data-id="6" data-name="Seda Papelito Brown" data-price="150.00">Adicionar ao Carrinho</button>
+           </div>
+           <div class="card">
+             <div class="product-image" id="img-7"></div>
+             <h3>Nikbar slim</h3>
+             <p>Esse vaper é o mais novo...</p>
+             <p>R$ <span class="bold">150,00</span></p>
+             <button class="btn" data-id="7" data-name="Vaporesso Midnight" data-price="150.00">Adicionar ao Carrinho</button>
+           </div>
+           <div class="card">
+             <div class="product-image" id="img-8"></div>
+             <h3>Nikbar Watermelon Ice</h3>
+             <p class="descript">Esse vaper é o novo...</p>
+             <p>R$ <span class="bold">150,00</span></p>
+             <button class="btn" data-id="8" data-name="Vaporesso Midnight" data-price="150.00">Adicionar ao Carrinho</button>
+           </div>
+           <!--fim dos cards-->
+         </section>   
+           
+         <div id="sidebar_content">
+            <nav id="sidebar">
+              <ul id="side-items">
+               <li class="side-item">
+                 <a href="../Projeto/produtos.html">
+                   <i class="fa-solid fa-box"></i>
+                   <span class="item-description">
+                       Vapers 
+                   </span>
+                 </a>
+               </li>
+               <li class="side-item active">
+                 <a href="../essências.html">
+                   <i class="fa-solid fa-box"></i>
+                   <span class="item-description">
+                       Essências 
+                   </span>
+                 </a>
+               </li>
+               <li class="side-item">
+                 <a href="../Projeto/sedas.html">
+                   <i class="fa-solid fa-box"></i>
+                   <span class="item-description">
+                       Sedas 
+                   </span>
+                 </a>
+               </li>
+               <li class="side-item">
+                 <a href="../Projeto/narguiles.html">
+                   <i class="fa-solid fa-box"></i>
+                   <span class="item-description">
+                       Narguiles 
+                   </span>
+                 </a>
+               </li>
+              </ul>
+        
+           </nav>
+           </div>    
+       </main>
+  
+    <!-- Rodapé-->
+    <footer>
+        <p><span class="bold">VaporSmoke</sapn>&copy; 2024</p>
+    </footer>
+    <!-- Whatsapp API-->
+    <div class="whatsapp">
+      <a href="https://wa.me/5541998867962" target="_blank">
+      <img src="../Projeto/img/whatsapp.png" width="70" title="Contate-nos" alt="Contate-nos">
+      </a>
+    </div>
+
+  </body>
+</html>
